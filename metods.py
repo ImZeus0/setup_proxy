@@ -36,7 +36,10 @@ def check_proxy():
 	else:
 		return False
 
-def info_proxy(ip):
+def info_proxy():
+	r = open('setup_proxy/ip.txt','r')
+	ip = r.read()
+	r.close()
 	url = f'http://ipinfo.io/{ip}/json'
 	response = requests.get(url)
 	text = response.text
@@ -53,6 +56,8 @@ if __name__ == '__main__':
 		print('OK')
 	elif choose == 2:
 		print(check_proxy())
+	elif choose == 3:
+		info_proxy()
 	else:
 		print('ERROR')
 		
