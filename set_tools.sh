@@ -2,7 +2,7 @@
 apt-get update
 apt install curl -y
 apt install dante-server -y
-apt install python-pip
+apt install python-pip -y
 pip3 install requests
 pip install requests
 chmod +x /etc/init.d/danted
