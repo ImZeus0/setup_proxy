@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get update
 apt install curl -y
 apt install dante-server -y
 apt install python-pip
