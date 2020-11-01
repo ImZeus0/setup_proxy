@@ -40,7 +40,7 @@ def info_proxy():
 	r = open('setup_proxy/ip.txt','r')
 	ip = r.read()
 	r.close()
-	url = f'http://ipinfo.io/{ip}/json'
+	url = f'http://ipinfo.io/'+ip+'/json'
 	response = requests.get(url)
 	text = response.text
 	f = open('setup_proxy/info_proxy.json','w')
