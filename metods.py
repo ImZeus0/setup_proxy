@@ -15,6 +15,7 @@ def get_interface(filename):
 		return 'No file'
 
 
+	
 def set_inteface_to_conf(interfase):
 	f = open('setup_proxy/danted.conf')
 	line = f.read()
